@@ -1,1 +1,5 @@
-composer require slim/slim:"4.*" //install slim
+* composer require slim/slim:"4.*" //install slim
+* composer require slim/psr7 // In order for auto-detection to work and enable you to use AppFactory::create() and App::run() without having to manually create a ServerRequest you need to install one of the following implementations
+- create public folder and then index.php
+    <?php  
+        (require __DIR__ . '/../src/bootstrap/index.php')->run();
